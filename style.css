@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+.qr-code-image {
+  width: 200px;  /* Adjust the width as needed */
+}
+.column {
+  margin: auto;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional for vertical centering */
+}
+
+.column1 {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pixelify Sans", sans-serif;
+}
+p, li, ol, a, span {
+  font-family: "Pixelify Sans", sans-serif;
+}
+.navbar {
+  padding: 30px 0 !important;
+}
+.navbar .container-fluid {
+  max-width: 1320px;
+}
+.nav-link {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.bg-darkgreen {
+  background-color: darkgreen;
+}
+
+.social-links i {
+  color: darkgreen;
+}
+/* home */
+.home section {
+  height: 800px;
+  overflow: hidden;
+  padding: 150px 0;
+}
+.hero-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+div#about-section {
+  /* margin-bottom: 200px; */
+}
+div#about-section section {
+  /* position: relative; */
+}
+.software {
+  z-index: 1;
+  padding: 60px 0;
+      background: darkgreen;
+      border-radius: 24px;
+}
+.small-title {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.big-title {
+  font-size: 5rem;
+  font-weight: 700;
+}
+.col.hero-image {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+.col.hero-image img {
+  margin-bottom: -18px;
+}
+.vid {
+  width: 100%;
+  z-index: 1;
+}
+.social-links {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+div#software-section {
+  margin-top: -100px;
+}
+/* about */
+.tech-icon {
+  height: 60px;
+  width: 60px;
+}
+.tech-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 24px;
+  padding: 32px;
+}
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.features-card {
+  background: whitesmoke;
+  padding: 24px 32px;
+  border-radius: 24px;
+}
+/* creatures */
+.creatures img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 24px;
+}
+/* features */
+.features {
+  padding: 80px 0;
+}
+.row-features-wrapper {
+  display: flex;
+}
+.col.features {
+  padding: 24px;
+}
+.modal-content {
+  background-color: whitesmoke; 
+}
+.modal-body img, .thumbnail {
+  width: 100%;
+  margin: 12px 0 24px ;
+  border-radius: 12px;
+}
+.modal-header {
+  border-bottom: whitesmoke; 
+}
+.modal-footer {
+  border-top: whitesmoke; 
+}
+.list-group-item {
+  background: transparent !important;
+  border: none !important;
+}
+.list-group {
+  padding: 0;
+}
+.list-group a {
+  text-decoration: none;
+}
+.footer-menu .social-links {
+  justify-content: center;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.heart {
+  width: 16px;
+  height: 16px;
+}
+/* RESPONSIVENESS */
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  .creatures .features-card {
+      min-height: auto !important;
+  }
+  .copyright {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      gap: 24px;
+  }
+  .jessile {
+      width: 100% !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  div#software-section {
+      margin-top: -110px !important;
+      padding: 0 !important;
+  }
+  .software {
+      border-radius: 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .creatures .features-card {
+      min-height: 20.938rem;
+  }
+  /* .levels {
+      padding: 0 24px; */
+  }
+  .home section {
+      height: auto;
+      /* padding: 150px 0; */
+  }
+  .big-title {
+      font-size: 3rem;
+  }
+  .jessile {
+      width: 400px;
+  }
+  img.blob-animation {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 500px;
+      height: 500px;
+      margin-top: -250px;
+      margin-left: -250px;
+  }
+
+@media (max-width: 1024px) {
+  div#software-section {
+      margin-top: -145px;
+      padding: 0 36px;
+  }
+  
+}
+@media (min-width: 992px) {
+ .navbar-collapse {
+      flex-grow: unset !important;
+  }
+  
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+  .software a img, .creatures img {
+      width: 40px;
+      height: 40px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {}

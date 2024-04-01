@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bukid Bahay - 2D farming game with tower defense aspects - Jessile Bonzo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+    <!-- home -->
+    <body class="bg-white-smoke text-black">
+      <header class="bg-darkgreen">
+        <nav class="navbar fixed-top navbar-dark bg-darkgreen navbar-expand-lg" id="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Bukid Bahay</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="section" href="#home-section">HOME</a>
+                    </li><li class="nav-item">
+                    <a class="nav-link" href="#levels-section">CROPS AND CREATURES</a>
+                    </li><li class="nav-item">
+                    <a class="nav-link" href="#features-section">FEATURES</a>
+                    </li>
+                    <a class="nav-link" href="#software-section">SOFTWARE</a>
+                    </li><li class="nav-item">
+                </ul>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-xxl bd-gutter home" id="home-section">
+        <section class="row g-3 g-md-5 mb-5 pb-5 justify-content-start">
+            <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start hero-info">
+                <div class="hero-info-wrapper">
+                    <h1 class="big-title">Bukid Bahay</h1>
+                    <h4 class="hero-desc">A 2D desktop farming game that showcases Philippine crops and farms, promoting sustainable farming practices. It features pixelated graphics, user-friendly interface, and tower defense gameplay.</h4>
+                        <img src="assets/features/qr-code-game.png" alt="QR Code" class="qr-code-image">
+                </div>
+            </div>
+            <div class="col hero-image">
+            <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start justify-content-center">
+                    <video width="360" height="240" src="assets/vid/bukid bahay teaser.mp4" controls autoplay unmuted class="jessile" alt="Jessile"></video><br>
+                    <div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+        <!-- ABOUT Crops and Creatures -->
+    <div class="col-lg-7 mx-auto pb-3 mb-3 mb-md-5 text-md-center levels" id="levels-section">
+        <h2 class="display-5 mb-3 fw-semibold lh-sm">Crops and Mythical Creatures</h2>
+        <p class="lead fw-normal">Philippine Crops and Mythical Creatures</p>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/crops/8.png" class="d-block w-100" alt="slide-1">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/crops/9.png" class="d-block w-100" alt="slide-2">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/crops/10.png" class="d-block w-100" alt="slide-3">
+              </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="assets/crops/11.png" class="d-block w-100" alt="slide-4">
+            </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/crops/12.png" class="d-block w-100" alt="slide-5">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/crops/3.png" class="d-block w-100" alt="slide-6">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/crops/4.png" class="d-block w-100" alt="slide-7">
+              </div>
+              <div class="carousel-item" data-bs-interval="10000">
+                <img src="assets/crops/5.png" class="d-block w-100" alt="slide-8">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Features -->
+    <div class="container-xxl bd-gutter" id="features-section">
+        <section class="col-lg-7 mb-5">
+            <div class="-icon d-inline-block mb-3" style="--bg-rgb: var(--bs-primary-rgb);">
+                <svg class="bi fs-1"><use xlink:href="#palette2"></use></svg>
+            </div>
+            <h2 class="display-5 mb-3 fw-semibold lh-sm">Features</h2>
+            <p class="lead fw-normal">The Bukid Bahay 2D Game Features</p>
+        </section> 
+        <!-- 2 grid and 1 center section -->
+        <section class="row g-3 g-md-5 mb-5 pb-5 justify-content-start proj-list">
+            <!-- start game --> <!-- Project Card  -->
+            <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+                <div class="features-card">
+                    <h4 class="fw-semibold">Splash Screen</h4>
+                    <img src="assets/features/10 - Copy.png" alt="Splash Screen" class="thumbnail">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#splashscreenModal">Open Scene</button>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="splashscreenModal">
+                <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-whitesmoke">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Splash Screen</h4>
+                    <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    <img src="assets/features/10 - Copy.png" alt="Splash Screen" class="">
+                    <p class="pe-lg-5">Start Game</p>
+                    <li class="pe-lg-5">
+                    The splash screen showcases the tagline "A Filipino Farm House," a farming game that harmoniously intertwines the tranquility of Philippine province life with the exciting challenges of tower defense. Diverse crops and serene visuals set the stage for your adventure. Clicking "Start" leads to the home page. The design reflects a serene farm life.</li><br>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- Dialogue  -->
+            <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+                <div class="features-card">
+                    <h4 class="fw-semibold">Dialogue Scene</h4>
+                    <img src="assets/features/19.png" alt="Dialogue" class="thumbnail">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dialogueModal">Open Scene</button>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="dialogueModal">
+                <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-whitesmoke">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Dialogue Scene</h4>
+                    <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    <img src="assets/features/19.png" alt="Dialogue" class="">
+                    <p class="pe-lg-5">Dialogue Scene</p>
+                    <li class="pe-lg-5">Juan learns from Lola Isang that their family protects a "mystical land" with harmful mythical creatures. To maintain balance, Lola entrusts Juan with planting a special seed to see these creatures. Juan accepts, promising to safeguard both humans and the mythical beings on the land.</li>
+                    <li>Players, guided by Lola Isang, receive a free seed to plant on the farm before advancing to tower defense gameplay.</li><br>
+                    </div>
+                </div>
+                </div>
+            </div>
+           
+            <!-- Almanac -->
+            <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+                <div class="features-card">
+                    <h4 class="fw-semibold">Almanac</h4>
+                    <img src="assets/features/23.png" alt="almanac" class="thumbnail">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#almanacModal">Open Scene</button>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="almanacModal">
+                <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-whitesmoke">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Almanac</h4>
+                    <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    <img src="assets/features/23.png" alt="Almanac" class="">
+                    <p class="pe-lg-5">Flora and Mythical Creatures</p>
+                    <li class="pe-lg-5">
+                        The crops are rice grains, corn, sweet potatoes, cabbage, ube, eggplant, onions, sponge gourd, radish, and garlic. In the farm game and tower defense levels, the player can plant any crop depending on their currency.</li>
+                        <li>Level 1 chills you with berbalang invaders. Level 2 throws cunning dwendes your way. Level 3 unleashes a nightmarish tikbalang. In Level 4, face the bizarre manananggal. Finally, the grand finale pits you against the Kapre, a colossal tree giant infamous for causing mind-bending confusion! The crops you cultivate will depend on the spoils you earn by defeating these legendary creatures in the tower defense levels.</li><br>
+                    </div>
+                </div> 
+                </div>
+            </div>
+
+            <!-- Store -->
+            <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+                <div class="features-card">
+                    <h4 class="fw-semibold">Store</h4>
+                    <img src="assets/features/24.png" alt="Store" class="thumbnail">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#storeModal">Open Scene</button>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="storeModal">
+                <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-whitesmoke">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Store</h4>
+                    <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    <img src="assets/features/24.png" alt="Store" class="">
+                    <p class="pe-lg-5">Store </p>
+                    <li class="pe-lg-5">
+                    After conquering enemies in the tower defense levels, you'll earn currency that can be used to purchase crops for your farm. The crops you can buy depend on the spoils you collect, so strategize your battles wisely!
+                    <li>A clear message will confirm your purchase, for example, "You bought rice!" If your funds are low, an example message like "Not enough currency for sweet potatoes" will help you plan your next move.
+                    </li><br>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Settings & Developers -->
+            <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+                <div class="features-card">
+                    <h4 class="fw-semibold">Settings & Developers</h4>
+                    <img src="assets/features/11.png" alt="Settings & Developers" class="thumbnail">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#soundModal">Open Scene</button>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div class="modal fade" id="soundModal">
+                <div class="modal-dialog modal-xl">
+                <div class="modal-content bg-whitesmoke">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                    <h4 class="modal-title">Settings & Developers</h4>
+                    <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                    <img src="assets/features/11.png" alt="Settings & Developers" class="">
+                    <p class="pe-lg-5">Settings & Developers</p>
+                    <li class="pe-lg-5">
+                        For players, a QR code unlocks the game's website, while a question mark icon playfully nudges them towards a mini-game. This mini-game keeps them busy and earning in-game currency while their crops patiently grow.</li>
+                        <li>
+                        To modify the game's volume, long-press your mouse button to adjust the background music. Below the sound, you can mute or unmute the sound effects of the game. Click the "QUIT" if the player wants to quit the game and name of developers of the 2d game.</li>
+                        <br>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+              <div class="features-card">
+                  <h4 class="fw-semibold">Farming Game</h4>
+                  <img src="assets/features/box.png" alt="Farming Game" class="thumbnail">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#farmingModal">Open Scene</button>
+              </div>
+          </div>
+          <!-- The Modal -->
+          <div class="modal fade" id="farmingModal">
+              <div class="modal-dialog modal-xl">
+              <div class="modal-content bg-whitesmoke">
+          
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                  <h4 class="modal-title">Farming Game</h4>
+                  <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  </div>
+          
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                  <img src="assets/features/box.png" alt="Farming Game" class="">
+                  <p class="pe-lg-5">Farming Game</p>
+                  <li class="pe-lg-5">
+                    When the farm game begins, players receive a free rice seed to plant in the farm game. Planting the seed, waiting for growth, and harvesting yields plants for the inventory utilized in the tower defense game.</li>
+                    <li>Once harvested, your crops will be stored in your inventory, ready to be used in the tower defense levels for strategic advantage!</li><br>
+                  </div>
+              </div>
+              </div>
+          </div>
+          <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+            <div class="features-card">
+                <h4 class="fw-semibold">Arcade Game & Levels</h4>
+                <img src="assets/features/16.png" alt="Arcade Game & Levels" class="thumbnail">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#levelsModal">Open Scene</button>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal fade" id="levelsModal">
+            <div class="modal-dialog modal-xl"> 
+            <div class="modal-content bg-whitesmoke">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">Arcade Game & Levels</h4>
+                <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                <img src="assets/features/16.png" alt="Arcade Game & Levels" class="">
+                <p class="pe-lg-5">Arcade & Levels</p>
+                <li class="pe-lg-5">
+                The player can play the arcade-game to earn currency and use it to buy crops. Entering the farmhouse and playing dodge the crows will add to the player's currency, which can then be used to plant crops in the farm game.
+                </li>
+                <li>Levels in the Bukid Bahay Farming Game progress sequentially. Initially, only level 1 is unlocked. As you successfully complete levels, subsequent levels will unlock, allowing you to progress further. The number of unlocked levels displayed will reflect your progress in the Tower Defense levels. Completing a level will display a layout numbered 1–5, indicating the level has been opened.</li><br>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+          <div class="features-card">
+              <h4 class="fw-semibold">Level 1</h4>
+              <img src="assets/features/28.png" alt="Level 1 and 2" class="thumbnail">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#level1Modal">Open Scene</button>
+          </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade" id="level1Modal">
+          <div class="modal-dialog modal-xl">
+          <div class="modal-content bg-whitesmoke">
+      
+              <!-- Modal Header -->
+              <div class="modal-header">
+              <h4 class="modal-title">Level 1</h4>
+              <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+              </div>
+      
+              <!-- Modal body -->
+              <div class="modal-body">
+              <img src="assets/features/28.png" alt="Level 1" class="">
+              <p class="pe-lg-5">Level 1</p>
+              <li class="pe-lg-5">
+                In Level 1, players face berbalangs known as ghouls. There are two soils that the player can use to plant crops and kill the mythical creatures. In this level, the player must defeat the Berbalangs in order to move on to the next level.
+                </li>
+                <li>
+                The dialogue will appear once the player has successfully defeated the mythical creatures in Level 1.
+                </li>
+                <br>
+              </div>
+          </div>
+          </div>
+      </div>
+      <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+        <div class="features-card">
+            <h4 class="fw-semibold">Level 2</h4>
+            <img src="assets/features/29.png" alt="Level2" class="thumbnail">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#level2Modal">Open Scene</button>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="level2Modal">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content bg-whitesmoke">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Level 2</h4>
+            <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+            <img src="assets/features/29.png" alt="Level 2" class="">
+            <p class="pe-lg-5">Level 2</p>
+            <li class="pe-lg-5">
+              In level 2, there are three soils that the player can use to plant crops and kill the mythical creatures. In this level, the player must defeat the Dwendes in order to move on to the next level.</li>
+            <li>The dialogue will appear once the player has successfully defeated the mythical creatures in Level 2.</li><br>
+            </div>
+        </div>
+        </div>
+    </div>
+      <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+        <div class="features-card">
+            <h4 class="fw-semibold">Level 3</h4>
+            <img src="assets/features/30.png" alt="Level 3" class="thumbnail">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#level3Modal">Open Scene</button>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="level3Modal">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content bg-whitesmoke">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Level 3</h4>
+            <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+            <img src="assets/features/30.png" alt="Level 3 and 4" class="">
+            <p class="pe-lg-5">Level 3</p>
+            <li class="pe-lg-5">               
+                In Level 3, players are provided with four fertile soils strategically positioned to accommodate the planting of crops essential for combating mythical creatures that the player can use to plant crops and kill the mythical creatures. In this level, the player must defeat the Tikbalangs in order to move on to the next level.</li>
+                <li>The dialogue will appear once the player has successfully defeated the mythical creatures in Level 3.</li><br>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+        <div class="features-card">
+            <h4 class="fw-semibold">Level 4</h4>
+            <img src="assets/features/31.png" alt="Level 4" class="thumbnail">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#level4Modal">Open Scene</button>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="level4Modal">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content bg-whitesmoke">
+    
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Level 4</h4>
+            <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+    
+            <!-- Modal body -->
+            <div class="modal-body">
+            <img src="assets/features/31.png" alt="Level 3 and 4" class="">
+            <p class="pe-lg-5">Level 4</p>
+            <li class="pe-lg-5">               
+                In level 4, there are five soils that the player can use to plant crops and kill the mythical creatures. In this level, the player must defeat the Manananggals in order to move on to the next level.</li>
+                <li>The dialogue will appear once the player has successfully defeated the mythical creatures in Level 4.</li><br>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-lg-6 py-lg-4 pe-lg-5 border-lg-start">
+      <div class="features-card">
+          <h4 class="fw-semibold">Level 5</h4>
+          <img src="assets/features/32.png" alt="Level 5" class="thumbnail">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#level5Modal">Open Scene</button>
+      </div>
+  </div>
+  <!-- The Modal -->
+  <div class="modal fade" id="level5Modal">
+      <div class="modal-dialog modal-xl">
+      <div class="modal-content bg-whitesmoke">
+  
+          <!-- Modal Header -->
+          <div class="modal-header">
+          <h4 class="modal-title">Level 5</h4>
+          <button type="button" class="btn text-white" data-bs-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+          </div>
+  
+          <!-- Modal body -->
+          <div class="modal-body">
+          <img src="assets/features/32.png" alt="Level 5" class="">
+          <p class="pe-lg-5">Level 5</p>
+          <li class="pe-lg-5">
+            In level 5, there are seven soils that the player can use to plant crops and kill the mythical creatures. In this level, the player must defeat the Kapres in order to move on to the next level.</li>
+            <li>The dialogue will appear once the player has successfully defeated the mythical creatures in Level 5.</li><br>
+          </div>
+      </div>
+      </div>
+  </div>
+        </section>
+    </div>
+    <!-- ABOUT - Software -->
+    <div class="container-xxl bd-gutter" id="software-section">
+      <section class="row g-3 g-md-5 mb-5 pb-5 justify-content-center">
+          <div class="col-md-12 mx-auto text-center software">
+              <h4 class="text-white fw-semibold">Software</h4>
+              <div class="d-flex flex-wrap align-items-center justify-content-around gap-5 mt-5">
+                <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://unity.com/">
+                  <img class="d-block mb-2" src="assets/software/unity final.png" alt="" width="60" height="60" loading="lazy">
+                  <span class="text-white lead">Unity</span>
+                </a>
+                <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://apps.apple.com/us/app/procreate/id425073498">
+                  <img class="d-block mb-2" src="assets/software/procreate.png" alt="" width="60" height="60" loading="lazy">
+                  <span class="text-white lead">Procreate</span>
+                </a>
+                <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://www.aseprite.org/">
+                  <img class="d-block mb-2" src="assets/software/Logo_Aseprite.svg.png" alt="" width="60" height="60" loading="lazy">
+                  <span class="text-white lead">Aseprite</span>
+                </a>
+                <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://visualstudio.microsoft.com/#vs-section">
+                    <img class="d-block mb-2" src="assets/software/visual studio.png" alt="" width="60" height="60" loading="lazy">
+                    <span class="text-white lead">Microsoft Visual Studio</span>
+                  </a>
+                  <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">
+                    <img class="d-block mb-2" src="assets/software/csharp.png" alt="" width="60" height="60" loading="lazy">
+                    <span class="text-white lead">C#</span>
+                  </a>
+              </div>
+          </div>
+      </section>
+  </div>
+
+     <!-- CONTACT/FOOTER MENU -->
+    <div class="container-xxl bd-gutter">
+        <h2 style="text-align:center">About Us</h2>
+                <div class="row">  <div class="column">
+                    <div style="text-align:center"class="container">
+                      <h5>Jessile Bonzo, Dev</h5>
+                      <p class="title">I built the website using these technologies.</p>
+                      <div class="social-links">
+                            <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                            <img class="d-block mb-2" src="assets/software/html.png" alt="" width="32" height="32" loading="lazy">
+                            <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                            <img class="d-block mb-2" src="assets/software/stylesheet.png" alt="" width="32" height="32" loading="lazy">
+                            <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                            <img class="d-block mb-2" src="assets/software/javascript.png" alt="" width="32" height="32" loading="lazy">
+                            <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://code.visualstudio.com/download">
+                            <img class="d-block mb-2" src="assets/software/vscode.png" alt="" width="32" height="32" loading="lazy">
+                            <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://www.qrcode-monkey.com/">
+                            <img class="d-block mb-2" src="assets/software/qr code.jpg" alt="" width="32" height="32" loading="lazy">
+                            <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://www.canva.com/">
+                            <img class="d-block mb-2" src="assets/software/canva.png" alt="" width="32" height="32" loading="lazy">
+                            <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://www.netlify.com/">
+                            <img class="d-block mb-2" src="assets/software/netlify-logo-png-transparent.png" alt="" width="32" height="32" loading="lazy">
+                            <a class="d-flex flex-column align-items-center text-decoration-none animate-img" target="_blank" href="https://www.netlify.com/"></a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="row1"><br>
+                    <div class="column1">
+                        <br>
+                        <h6>Kristine Columbres, PM</h6>
+                        <p class="title">Assets</p>
+                    </div>
+                    <div class="column1">
+                        <br>
+                        <h6>Sander Dela Cruz, Main Dev</h6>
+                    </div>
+                    <div class="column1">
+                        <br>
+                        <h6>Janssen Halog, Asset Artist</h6>
+                      <p class="title">Assets & Video</p>
+                    </div>
+                    <div class="column1">
+                        <br>
+                        <h6>Michael Junio, Dev</h>
+                    </div>
+                  </div>
+                    <div class="container-xxl bd-gutter">
+        <section class="col-lg-12 mx-auto pb-3 mb-3 mb-md-5 text-md-center copyright">
+            <div class="social-links">
+                <a href="https://drive.google.com/drive/folders/1FUkjbRqDkwRPh-BXNu5TNczETB4I9F9t" target="_blank"><i class="fa fa-google fa-2x"></i></a>
+            </div>
+            <p>Made with Love <span><img class="heart" src="assets/software/heart-solid.svg"></span> | © Bukid Bahay 2024</p>
+            </section>
+            </div>
+            </section>
+        </div>
+        </div>
+        </div>
